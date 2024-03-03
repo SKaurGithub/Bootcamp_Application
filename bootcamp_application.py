@@ -120,13 +120,13 @@ while True:
 
 location = is_alpha("Please enter your location (city): ")
 
-work = input("Are you eligible to work in the UK? (yes/no): ")
+work_eligibility = input("Are you eligible to work in the UK? (yes/no): ")
 while True:
-    if work.lower() == "yes" or work.lower() == "no":
+    if work_eligibility.lower() == "yes" or work_eligibility.lower() == "no":
         break
 
     else:
-        work = input("Please enter yes or no. "
+        work_eligibility = input("Please enter yes or no. "
                      "Are you eligible to work in the UK?: ")
 
 
@@ -151,7 +151,7 @@ user = {"First name": first_name.title(),
         "Contact number": phone_number,
         "Email address": email_address.lower(),
         "Location": location.title(),
-        "Eligible to work": work.title(),
+        "Eligible to work": work_eligibility.title(),
         "Programming language": programming_language.title(),
         }
 
@@ -227,14 +227,14 @@ while True:
         user["Location"] = location.title()
 
     elif review == "7":
-        work = input("Are you eligible to work in the UK? (yes/no): ")
+        work_eligibility = input("Are you eligible to work in the UK? (yes/no): ")
         while True:
-            if work.lower() == "yes" or work.lower() == "no":
-                user["Eligible to work"] = work.title()
+            if work_eligibility.lower() == "yes" or work_eligibility.lower() == "no":
+                user["Eligible to work"] = work_eligibility.title()
                 break
 
             else:
-                work = input("Please enter yes or no. "
+                work_eligibility = input("Please enter yes or no. "
                              "Are you eligible to work in the UK?: ")
 
     elif review == "8":
