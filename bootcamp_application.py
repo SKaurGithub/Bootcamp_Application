@@ -145,6 +145,8 @@ separator()
 print("Thank you for providing us with the above.\n"
       "Please review the information you have entered below.")
 
+# Storing the collected data from the user in a dict
+# in order to display the data to the user
 user = {"First name": first_name.title(),
         "Surname": surname.title(),
         "Age": age,
